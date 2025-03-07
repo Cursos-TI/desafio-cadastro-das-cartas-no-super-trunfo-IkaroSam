@@ -35,10 +35,38 @@ int main() {
 
     printf("Digite quantidade pontos turisticos:");
     scanf("%i", &turiscos );
+     
 
     printf("Carta 1:\nEstado: %c\ncodigo: %d\n", estado, codigo);
-    printf("Nome da cidade: %d\nPopulaçao:%i\n", cidade, populacao);
+    printf("Nome da cidade: %s\nPopulaçao:%i\n", cidade, populacao);
     printf("Área: %d\nPIB: %f\nNúmero de Pontos turísticos: %f", area, PIB, turiscos);
+
+
+    printfI("Digite a letra do estado:");
+    scanf("%c", &estado);
+
+    printf("Digite o codigo da carta:");
+    scanf("%d", &codigo);
+
+    printf("Digite o nome da cidade:");
+    scanf("%s", &cidade);
+
+    printf("Digite a populção");
+    scanf("%i", &populacao);
+
+    printf("Digite a área da cidade:");
+    scanf("%d", area);
+
+    printf("Digite o PIB:");
+    scanf("%d", &area);
+
+    printf("Digite o número de pontos turistos");
+    scanf("%i", turiscos);
+
+
+    printf("Carta 2:\nEstado: %c\nCodigo: %d\n", estado, codigo);
+    printf("Nome da cidade: %s\n População %i\n", cidade, populacao);
+    printf("Área: %d\nPIB: %f\n Número de pontos turísticos: %f", area, PIB, turiscos);
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
@@ -50,6 +78,7 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
 
     return 0;
 }
